@@ -4,7 +4,10 @@ function fibonacci(num) {
   let preSet1 = 1; // first term always going to be 1
   let sum = 0; // this witll ne combination of preSet + preSet1
 
-  //
+if (num === 0) {
+  return num;
+}
+
 for (let i = 2; i <= num; i++) {
   sum = (preSet + preSet1);
   preSet = preSet1;
